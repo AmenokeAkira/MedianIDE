@@ -34,7 +34,6 @@ bool directoryExists(const string& dirName) {
 void check_downloaded_extensions() {
     set<string> Extensions;
     Extensions.insert("Median_TextExtension");
-
     cout << "Checking for the following extensions:\n";
     for (string ext : Extensions) {
         if (directoryExists(ext)) { 
@@ -333,6 +332,7 @@ void readFile(const string& filename) {
 
 int main() {
     string command;
+    int l = 0;
     string fileName;
     cout << "Median HEAD is working(or type '-exit' to exit)\n";
     while (true) {
@@ -364,13 +364,24 @@ int main() {
         }
     }
     //Text
-    string a;
-    string filename;
-    cout << "Enter the name of the text file with the .median extension (or specify its path): " << endl;
-    getline(cin, filename);
-    while (true) {
-        readFile(filename);
-        cin >> a;
+    while (l<1) {
+        string action;
+        string input;
+        cin >> action;
+        set<string> IncludedExtensions;
+        if (action == "-include <Text_Extension>") {
+            IncludedExtensions.insert("Median_TextExtension");
+        }
+        else if (action == "-mh"){
+            string filename;
+            cout << "Enter the name of the text file with the .median extension (or specify its path): " << endl;
+            cin >> input;
+            getline(cin, filename);
+            while (true) {
+                readFile(filename);
+                cin >> input;
+            }
+        }
     }
     return 0;
 }
