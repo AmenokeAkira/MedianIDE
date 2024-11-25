@@ -71,6 +71,9 @@ void findFileByName(const fs::path& path, const std::string& fileName) {
         std::cerr << "Error 4: An unknown error occurred." << std::endl;
     }
 }
+
+void TextExtension() {}
+
 int main() {
     string command;
     string fileName;
@@ -103,6 +106,7 @@ int main() {
             cout << "Use '-check' or '-install <extension>'\n";
         }
     }
+    //Text
 
     return 0;
 }
