@@ -380,6 +380,11 @@ int main() {
             while (true) {
                 readFile(filename);
                 cin >> input;
+                if (command.find("-0") == 0) {
+                    fileName = command.substr(5);
+                    fs::path currentPath = fs::current_path();
+                    findFileByName(currentPath, fileName);
+                }
             }
         }
     }
