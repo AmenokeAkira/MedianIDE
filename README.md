@@ -11,3 +11,4 @@ Median Professional - a more professional and user-friendly development environm
   The extension for Median allows you to check and read files with the .median extension without affecting them and without executing them.
 
   * Windows 10
+  * Windows 11
