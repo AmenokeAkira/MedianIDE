@@ -1,4 +1,0 @@
-﻿  ObserverDecorator.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
-C:\Users\admin\Documents\GitHub\MedianIDE\Median HEAD\ObserverLevel\ObserverDecorator\ObserverDecorator.cpp(34,29): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  ObserverDecorator.vcxproj -> C:\Users\admin\Documents\GitHub\MedianIDE\Median HEAD\ObserverLevel\ObserverDecorator\x64\Debug\ObserverDecorator.exe
