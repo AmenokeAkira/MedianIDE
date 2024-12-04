@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D9254C6-1FD9-41F0-B317-ABE0B3351A19}|Median_TextExtension.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\Median_TextExtension.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D9254C6-1FD9-41F0-B317-ABE0B3351A19}|Median_TextExtension.vcxproj|solutionrelative:Median_TextExtension.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\Text.median||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Text.median||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\Text.median||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Text.median||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{6D9254C6-1FD9-41F0-B317-ABE0B3351A19}|Median_TextExtension.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\Median_TextExtension.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D9254C6-1FD9-41F0-B317-ABE0B3351A19}|Median_TextExtension.vcxproj|solutionrelative:Median_TextExtension.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Text.median",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\Text.median",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\Text.median",
               "RelativeDocumentMoniker": "Text.median",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\Text.median",
-              "RelativeToolTip": "Text.median",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\Text.median*",
+              "RelativeToolTip": "Text.median*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-22T15:45:55.638Z",
+              "WhenOpened": "2024-12-04T12:59:55.141Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Median_TextExtension.cpp",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\Median_TextExtension.cpp",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\Median_TextExtension.cpp",
               "RelativeDocumentMoniker": "Median_TextExtension.cpp",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\Median_TextExtension.cpp",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\Median_TextExtension.cpp",
               "RelativeToolTip": "Median_TextExtension.cpp",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAIwFgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAGgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-22T15:10:24.983Z",
               "EditorCaption": ""

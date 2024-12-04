@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D9254C6-1FD9-41F0-B317-ABE0B3351A19}|Median_TextExtension.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\Median_TextExtension.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6D9254C6-1FD9-41F0-B317-ABE0B3351A19}|Median_TextExtension.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\Median_TextExtension.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6D9254C6-1FD9-41F0-B317-ABE0B3351A19}|Median_TextExtension.vcxproj|solutionrelative:Median_TextExtension.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Median_TextExtension.cpp",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\Median_TextExtension.cpp",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\Median_TextExtension.cpp",
               "RelativeDocumentMoniker": "Median_TextExtension.cpp",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Median\\Median_TextExtension\\Median_TextExtension.cpp",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median-Text_Extension\\Median_TextExtension\\Median_TextExtension.cpp",
               "RelativeToolTip": "Median_TextExtension.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAAAGgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-22T15:10:24.983Z",
               "EditorCaption": ""
