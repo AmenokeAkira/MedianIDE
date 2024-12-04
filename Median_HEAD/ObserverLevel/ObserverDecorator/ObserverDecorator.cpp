@@ -27,7 +27,6 @@ void decrypt(const string& filename, char keyDigit, const vector<string>& inputN
             int decryptedDigit = (encDigit - (keyDigit - '0') - randomValue + 10) % 10;
             decryptedNumber += to_string(decryptedDigit);
         }
-
         decryptedNumbers.push_back(decryptedNumber);
         start = end + 1;
     }
@@ -38,11 +37,10 @@ void decrypt(const string& filename, char keyDigit, const vector<string>& inputN
             break;
         }
     }
-    int decode = keyDigit;
 }
 int main() {
     char keyDigit;
-    cout << "< Acces Key > ";
+    cout << "< Access Key > ";
     cin >> keyDigit;
     vector<string> inputNumbers(10);
     for (int i = 0; i < 10; ++i) {
