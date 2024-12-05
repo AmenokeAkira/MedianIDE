@@ -28,10 +28,11 @@
               "RelativeDocumentMoniker": "ObserverLevel.cpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median_HEAD\\ObserverLevel\\ObserverLevel.cpp",
               "RelativeToolTip": "ObserverLevel.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-28T19:05:02.764Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -41,7 +42,7 @@
               "RelativeDocumentMoniker": "ObserverDecorator\\ObserverDecorator.cpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median_HEAD\\ObserverLevel\\ObserverDecorator\\ObserverDecorator.cpp",
               "RelativeToolTip": "ObserverDecorator\\ObserverDecorator.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-28T19:30:56.131Z",
               "EditorCaption": ""

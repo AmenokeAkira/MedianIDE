@@ -310,8 +310,8 @@ void readFile(const string& filename) {
         cout << "Error 0: Failed to open the specified text file: " << filename << endl;
         return;
     }
-    string line;
     clearConsole();
+    string line;
     while (getline(inputFile, line)) {
         size_t startPos = 0;
         while ((startPos = line.find('<', startPos)) != string::npos) {
@@ -350,12 +350,6 @@ int main() {
                 cout << "Error 1: Please specify an extension name.\n";
             }
         }
-        else if (command.find("-lib") == 0) {
-            fileName = command.substr(5);
-            fs::path currentPath = fs::current_path();
-            findFileByName(currentPath, fileName);
-            return 0;
-        }
         else if (command == "-check") {
             check_downloaded_extensions();
         }
@@ -367,25 +361,30 @@ int main() {
     while (l<1) {
         string action;
         string input;
+        cout << "process New_Project[] >> ";
         cin >> action;
         set<string> IncludedExtensions;
         if (action == "-include <Text_Extension>") {
             IncludedExtensions.insert("Median_TextExtension");
         }
-        else if (action == "-mh"){
+        else if (action == "-open"){
             string filename;
+            bool processUnfinished = true;
             cout << "Enter the name of the text file with the .median extension (or specify its path): " << endl;
-            cin >> input;
-            getline(cin, filename);
-            while (true) {
+            cin >> filename;
+            while (processUnfinished) {
                 readFile(filename);
                 cin >> input;
-                if (command.find("-0") == 0) {
-                    fileName = command.substr(5);
-                    fs::path currentPath = fs::current_path();
-                    findFileByName(currentPath, fileName);
+                if (input == "-exit") {
+                    processUnfinished = false;
                 }
+                cout << processUnfinished;
             }
+        }
+        else if (action.find("-create") == 0) {
+            fileName = "ObserverLevel.cpp";
+            fs::path currentPath = fs::current_path();
+            findFileByName(currentPath, fileName);
         }
     }
     return 0;
