@@ -1,4 +1,3 @@
-# Median Enterprise
 
 # Median-IDE Extensions List
 ## Text Extensions
