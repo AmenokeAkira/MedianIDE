@@ -1,3 +1,4 @@
+What is Median? Median is our own game development environment, classic applications, libraries, and extensions. We set out to bring together all aspects of programming, analysis, and coding in order to unite professionals from different fields.
 
 # Median-IDE Extensions List
 ## Text Extensions
