@@ -1,4 +1,0 @@
-﻿  ObserverLevel.cpp
-C:\Users\admin\Documents\GitHub\MedianIde\MedianIDE\Median_HEAD\ObserverLevel\ObserverLevel.cpp(17,29): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  LINK : не найден или не выполнена сборка C:\Users\admin\Documents\GitHub\MedianIde\MedianIDE\Median_HEAD\ObserverLevel\x64\Debug\ObserverLevel.exe при последней инкрементной компоновке; выполняется полная компоновка
-  ObserverLevel.vcxproj -> C:\Users\admin\Documents\GitHub\MedianIde\MedianIDE\Median_HEAD\ObserverLevel\x64\Debug\ObserverLevel.exe
