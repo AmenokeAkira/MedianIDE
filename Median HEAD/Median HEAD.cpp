@@ -3,11 +3,9 @@
 #include <string>
 #include <cstdlib>
 #include <fstream>
-#include <cstdlib>
-#include <string>
 #include <algorithm>
 #include <vector>
-using namespace std;
+#include "Text_Extension.h"
 using namespace std;
 #include <filesystem>
 namespace fs = std::filesystem;
@@ -36,7 +34,7 @@ void check_downloaded_extensions() {
     Extensions.insert("Median_TextExtension");
     cout << "Checking for the following extensions:\n";
     for (string ext : Extensions) {
-        if (directoryExists(ext)) { 
+        if (directoryExists(ext)) {
             cout << "Found extension folder: " << ext << endl;
         }
     }
@@ -77,6 +75,41 @@ void findFileByName(const fs::path& path, const std::string& fileName) {
     }
 }
 
+void clearConsole() {
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
+
+
+void readFile(const string& filename) {
+    ifstream inputFile(filename);
+    if (!inputFile) {
+        cout << "Error 0: Failed to open the specified text file: " << filename << endl;
+        return;
+    }
+    clearConsole();
+    string line;
+    while (getline(inputFile, line)) {
+        size_t startPos = 0;
+        while ((startPos = line.find('<', startPos)) != string::npos) {
+            size_t endPos = line.find('>', startPos);
+            if (endPos != string::npos) {
+                string text = line.substr(startPos + 1, endPos - startPos - 1);
+                formatAndPrint(text);
+                startPos = endPos + 1;
+
+            }
+            else {
+                break;
+            }
+        }
+    }
+    inputFile.close();
+}
+
 int main() {
     string command;
     int l = 0;
@@ -97,17 +130,41 @@ int main() {
                 cout << "Error 1: Please specify an extension name.\n";
             }
         }
-        else if (command.find("-lib") == 0) {
-            fileName = command.substr(5);
-            fs::path currentPath = fs::current_path();
-            findFileByName(currentPath, fileName);
-            return 0;
-        }
         else if (command == "-check") {
             check_downloaded_extensions();
         }
         else {
             cout << "Use '-check' or '-install <extension>'\n";
+        }
+    }
+    //Text
+    while (l < 1) {
+        string action;
+        string input;
+        cout << "process New_Project[] >> ";
+        cin >> action;
+        set<string> IncludedExtensions;
+        if (action == "-include <Text_Extension>") {
+            IncludedExtensions.insert("Median_TextExtension");
+        }
+        else if (action == "-open") {
+            string filename;
+            bool processUnfinished = true;
+            cout << "Enter the name of the text file with the .median extension (or specify its path): " << endl;
+            cin >> filename;
+            while (processUnfinished) {
+                readFile(filename);
+                cin >> input;
+                if (input == "-exit") {
+                    processUnfinished = false;
+                }
+                cout << processUnfinished;
+            }
+        }
+        else if (action.find("-create") == 0) {
+            fileName = "ObserverLevel.cpp";
+            fs::path currentPath = fs::current_path();
+            findFileByName(currentPath, fileName);
         }
     }
     return 0;
