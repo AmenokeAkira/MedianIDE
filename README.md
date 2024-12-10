@@ -1,6 +1,5 @@
-# Median IDE
-What is Median? Median is our own game development environment, classic applications, libraries, and extensions. We set out to bring together all aspects of programming, analysis, and coding in order to unite professionals from different fields.
-Our idea is that programmers—beginners, juniors, experts, and project managers—will participate in creating our development environment, shaping it to meet their own needs and the needs of others whose knowledge may not be sufficient to tailor it to themselves. Open source, the ability to update the repository, and to showcase their progress are what will allow us to turn our vision into reality.
+# Median Community
+Median Community - a development environment that allows users to utilize any available extensions from GitHub. The environment is very flexible and is universal for complete optimization of projects and device operations. To work with the development environment, it is necessary to install the required extensions. The only downside of the Community version is the lack of compatibility between multiple extensions for working on a single project and direct access to system files.
 
 # Median-IDE Extensions List
 ## Text Extensions
