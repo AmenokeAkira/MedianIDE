@@ -3,11 +3,39 @@ Median Community - a development environment that allows users to utilize any av
 
 
 ![image](https://github.com/user-attachments/assets/e2b8a1ac-35e2-4646-aa16-c424c127e730) 
-# Median-IDE Extensions List
-## Text Extensions
-* \<Text Extension\>
-  
-  The extension for Median allows you to check and read files with the .median extension without affecting them and without executing them.
 
-  * Windows 10
-  * Windows 11
+## Commiting Rules
+Build project or change external dependencies `(Build)`
+
+CI setup and working with scripts `(Ci)`
+
+Documentation update `(Docs)`
+
+Adding new functionality `(Feat)`
+   
+Fixing bugs `(Fix)`
+
+Changes aimed at improving performance `(Perf)`
+
+Code refactoring without fixing bugs or adding new features `(Refactor)`
+
+Reverting to previous commits `(Revert)`
+
+Code style corrections `(Style)`
+
+Adding tests `(Test)`
+    
+# Median-IDE Extensions List
+## Support Extensions
+* [Visual Studio Fixing](https://github.com/AmenokeAkira/Visual-Studio-Fixing)
+
+  File Configuration for Resolving Almost All System Errors in Visual Studio Related to Configuration.
+  This repository includes templates for all the main paths to libraries and directories to address almost all issues related to accessing system files
+    ![Без названия83](https://github.com/user-attachments/assets/46c37dab-d228-4f5c-85f4-d778013b4e77)
+  
+## Text Extensions
+* [\<Text Extension\>](https://github.com/AmenokeAkira/Text-Extension)
+  
+  Text extension for the open-source development environment Median. The first verified extension.
+
+  * Windows (Support)
