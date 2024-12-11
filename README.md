@@ -3,27 +3,6 @@ Median Community - a development environment that allows users to utilize any av
 
 
 ![image](https://github.com/user-attachments/assets/e2b8a1ac-35e2-4646-aa16-c424c127e730) 
-
-## Commiting Rules
-Build project or change external dependencies `(Build)`
-
-CI setup and working with scripts `(Ci)`
-
-Documentation update `(Docs)`
-
-Adding new functionality `(Feat)`
-   
-Fixing bugs `(Fix)`
-
-Changes aimed at improving performance `(Perf)`
-
-Code refactoring without fixing bugs or adding new features `(Refactor)`
-
-Reverting to previous commits `(Revert)`
-
-Code style corrections `(Style)`
-
-Adding tests `(Test)`
     
 # Median-IDE Extensions List
 ## Support Extensions
