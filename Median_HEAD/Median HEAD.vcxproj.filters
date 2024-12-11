@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Text_Extension\Text_Extension.h">
+    <ClInclude Include="Text_Extension.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median HEAD\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median_HEAD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBEF1EB2-065E-474B-A462-94DC9BCC5CAF}|Median HEAD.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median HEAD\\Median HEAD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{CBEF1EB2-065E-474B-A462-94DC9BCC5CAF}|Median HEAD.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median_HEAD\\Median HEAD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CBEF1EB2-065E-474B-A462-94DC9BCC5CAF}|Median HEAD.vcxproj|solutionrelative:Median HEAD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBEF1EB2-065E-474B-A462-94DC9BCC5CAF}|Median HEAD.vcxproj|C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median_HEAD\\Text_Extension.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CBEF1EB2-065E-474B-A462-94DC9BCC5CAF}|Median HEAD.vcxproj|solutionrelative:Text_Extension.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +18,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Text_Extension.h",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median_HEAD\\Text_Extension.h",
+              "RelativeDocumentMoniker": "Text_Extension.h",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median_HEAD\\Text_Extension.h",
+              "RelativeToolTip": "Text_Extension.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-11T20:42:22.354Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Median HEAD.cpp",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median HEAD\\Median HEAD.cpp",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median_HEAD\\Median HEAD.cpp",
               "RelativeDocumentMoniker": "Median HEAD.cpp",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median HEAD\\Median HEAD.cpp",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\MedianIde\\MedianIDE\\Median_HEAD\\Median HEAD.cpp",
               "RelativeToolTip": "Median HEAD.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAewB0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-16T14:10:17.958Z",
               "EditorCaption": ""

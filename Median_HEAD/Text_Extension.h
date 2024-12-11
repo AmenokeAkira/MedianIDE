@@ -3,8 +3,29 @@
 #include <vector>
 #include <iostream>
 #include <cstdlib>
+#include <unordered_map>
+#include <functional>
 using namespace std;
 std::string textformatting(std::string text) { return text; }
+class Formatter {
+public:
+    void addFormat(const string& key, const string& format) {
+        formatMap[key] = format;
+    }
+    vector<string> getFormats(const string& text) const {
+        vector<string> formats;
+        for (const auto& [key, format] : formatMap) {
+            if (text.size() >= 4 && text.substr(0, 2) == key && text.substr(text.size() - 2) == key) {
+                formats.push_back(format);
+                string newText = text.substr(2, text.size() - 4);
+                return formats;
+            }
+        }
+        return formats;
+    }
+private:
+    unordered_map<string, string> formatMap;
+};
 void applyFormatting(const vector<std::string>& formats, std::string text) {
     std::string formattedText = text;
     for (const auto& format : formats) {
@@ -99,128 +120,38 @@ void applyFormatting(const vector<std::string>& formats, std::string text) {
     }
     cout << formattedText;
 }
-
 void formatAndPrint(string text) {
     text.erase(remove(text.begin(), text.end(), '<'), text.end());
     text.erase(remove(text.begin(), text.end(), '>'), text.end());
-
-    vector<string> formats;
-
-    if (text.size() >= 4 && text.substr(0, 2) == "**" && text.substr(text.size() - 2) == "**") {
-        formats.push_back("bold");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 2 && text[0] == '*' && text[text.size() - 1] == '*') {
-        formats.push_back("italic");
-        text = text.substr(1, text.size() - 2);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "##" && text.substr(text.size() - 2) == "##") {
-        formats.push_back("weak");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "__" && text.substr(text.size() - 2) == "__") {
-        formats.push_back("underlined");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "!!" && text.substr(text.size() - 2) == "!!") {
-        formats.push_back("blinking");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "--" && text.substr(text.size() - 2) == "--") {
-        formats.push_back("negative");
-        text = text.substr(2, text.size() - 4);
-    }
-
-    if (text.size() >= 4 && text.substr(0, 2) == "@1" && text.substr(text.size() - 2) == "@1") {
-        formats.push_back("black");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "@2" && text.substr(text.size() - 2) == "@2") {
-        formats.push_back("red");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "@3" && text.substr(text.size() - 2) == "@3") {
-        formats.push_back("green");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "@4" && text.substr(text.size() - 2) == "@4") {
-        formats.push_back("yellow");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "@5" && text.substr(text.size() - 2) == "@5") {
-        formats.push_back("blue");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "@6" && text.substr(text.size() - 2) == "@6") {
-        formats.push_back("purple");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "@7" && text.substr(text.size() - 2) == "@7") {
-        formats.push_back("cyan");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "@8" && text.substr(text.size() - 2) == "@8") {
-        formats.push_back("white");
-        text = text.substr(2, text.size() - 4);
-    }
-
-    if (text.size() >= 4 && text.substr(0, 2) == "$1" && text.substr(text.size() - 2) == "$1") {
-        formats.push_back("blackb");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "$2" && text.substr(text.size() - 2) == "$2") {
-        formats.push_back("redb");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "$3" && text.substr(text.size() - 2) == "$3") {
-        formats.push_back("greenb");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "$4" && text.substr(text.size() - 2) == "$4") {
-        formats.push_back("yellowb");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "$5" && text.substr(text.size() - 2) == "$5") {
-        formats.push_back("blueb");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "$6" && text.substr(text.size() - 2) == "$6") {
-        formats.push_back("purpleb");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "$7" && text.substr(text.size() - 2) == "$7") {
-        formats.push_back("cyanb");
-        text = text.substr(2, text.size() - 4);
-    }
-    if (text.size() >= 4 && text.substr(0, 2) == "$8" && text.substr(text.size() - 2) == "$8") {
-        formats.push_back("whiteb");
-        text = text.substr(2, text.size() - 4);
-    }
-
-    if (text.size() >= 4 && text.substr(0, 2) == "%%" && text.substr(text.size() - 2) == "%%") {
-        formats.push_back("rgb");
-        text = text.substr(2, text.size() - 4);
-    }
-
-    if (text.size() >= 4 && text.substr(0, 2) == "^^" && text.substr(text.size() - 2) == "^^") {
-        formats.push_back("doubleunderlined");
-        text = text.substr(2, text.size() - 4);
-    }
-
-    if (text.size() >= 4 && text.substr(0, 2) == "[[" && text.substr(text.size() - 2) == "]]") {
-        formats.push_back("framed");
-        text = text.substr(2, text.size() - 4);
-    }
-
-    if (text.size() >= 4 && text.substr(0, 2) == "{{" && text.substr(text.size() - 2) == "}}") {
-        formats.push_back("circled");
-        text = text.substr(2, text.size() - 4);
-    }
-
-    if (text.size() >= 4 && text.substr(0, 2) == "||" && text.substr(text.size() - 2) == "||") {
-        formats.push_back("overlined");
-        text = text.substr(2, text.size() - 4);
-    }
+    Formatter formatter;
+    formatter.addFormat("*", "italic");
+    formatter.addFormat("**", "bold");
+    formatter.addFormat("##", "weak");
+    formatter.addFormat("__", "underlined");
+    formatter.addFormat("!!", "blinking");
+    formatter.addFormat("--", "negative");
+    formatter.addFormat("@1", "black");
+    formatter.addFormat("@2", "red");
+    formatter.addFormat("@3", "green");
+    formatter.addFormat("@4", "yellow");
+    formatter.addFormat("@5", "blue");
+    formatter.addFormat("@6", "purple");
+    formatter.addFormat("@7", "cyan");
+    formatter.addFormat("@8", "white");
+    formatter.addFormat("$1", "blackb");
+    formatter.addFormat("$2", "redb");
+    formatter.addFormat("$3", "greenb");
+    formatter.addFormat("$4", "yellowb");
+    formatter.addFormat("$5", "blueb");
+    formatter.addFormat("$6", "purpleb");
+    formatter.addFormat("$7", "cyanb");
+    formatter.addFormat("$8", "whiteb");
+    formatter.addFormat("%%", "rgb");
+    formatter.addFormat("^^", "doubleunderlined");
+    formatter.addFormat("[[", "framed");
+    formatter.addFormat("{{", "circled");
+    formatter.addFormat("||", "overlined");
+    vector<string> formats = formatter.getFormats(text);
     applyFormatting(formats, text);
     cout << endl;
 }

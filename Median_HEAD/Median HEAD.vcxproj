@@ -138,7 +138,7 @@
     <ClCompile Include="Median HEAD.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Text_Extension\Text_Extension.h" />
+    <ClInclude Include="Text_Extension.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
