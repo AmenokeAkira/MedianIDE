@@ -1,0 +1,6 @@
+
+Binaries/Intermediates/
+Binaries/windows-x86_64/
+/.vs
+.idea/
+.git
