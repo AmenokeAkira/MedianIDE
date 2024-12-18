@@ -6,6 +6,7 @@
 #include <filesystem>
 #include <fstream>
 #include "Text_Extension.h"
+#include <imgui/imgui.h>
 namespace fs = std::filesystem;
 using namespace std;
 void install_extension(const string& extension) {
